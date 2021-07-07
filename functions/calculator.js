@@ -5,9 +5,13 @@ const calculator = (function () {
   function subtract(b, a) {
     return b - a;
   }
+  function multiply(a, b) {
+    return a * b;
+  }
   return {
     add,
     subtract,
+    multiply,
   };
 })();
 
