@@ -18,3 +18,12 @@ test('subtracts 1 from 3, expects 2', () => {
 test('float subtraction - subtracts 0.3 from 3, expects 2.7', () => {
   expect(calculator.subtract(3, 0.3)).toBeCloseTo(2.7);
 });
+
+// Tests for multiply
+test('multiplies 2 * 4, expects 8', () => {
+  expect(calculator.multiply(2, 4)).toBe(8);
+});
+
+test('multiply floats 2 * 1.25', () => {
+  expect(calculator.multiply(2, 1.25)).toBeCloseTo(2.5);
+});
