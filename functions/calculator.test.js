@@ -27,3 +27,12 @@ test('multiplies 2 * 4, expects 8', () => {
 test('multiply floats 2 * 1.25', () => {
   expect(calculator.multiply(2, 1.25)).toBeCloseTo(2.5);
 });
+
+// Tests for divide
+test('divides 27 by 9, expects 3', () => {
+  expect(calculator.divide(27, 3)).toBe(9);
+});
+
+test('divides 4 by 3', () => {
+  expect(calculator.divide(4, 3)).toBeCloseTo(1.333);
+});
