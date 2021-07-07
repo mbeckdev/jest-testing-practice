@@ -28,7 +28,7 @@ function caesarCipher(string, shiftNumber) {
       returnString += string.charAt(i);
     }
   }
-  console.log(returnString);
+  // console.log(returnString);
   return returnString;
 }
 
