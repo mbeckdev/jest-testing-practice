@@ -12,6 +12,8 @@ function analyze(arrayOfNumbers) {
   let returnObject = {};
   returnObject.min = _min(arrayOfNumbers);
   returnObject.max = _max(arrayOfNumbers);
+  returnObject.length = _length(arrayOfNumbers);
+  returnObject.average = _average(arrayOfNumbers);
   return returnObject;
 }
 
@@ -52,6 +54,20 @@ function _max(arrayOfNumbers) {
   }
 
   return allTimeBiggestNumber;
+}
+
+function _length(arrayOfNumbers) {
+  return arrayOfNumbers.length;
+}
+
+function _average(arrayOfNumbers) {
+  let average = 0;
+  let allNumbersSummed = 0;
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  allNumbersSummed = arrayOfNumbers.reduce(reducer);
+
+  average = allNumbersSummed / arrayOfNumbers.length;
+  return average;
 }
 
 export { analyze };
