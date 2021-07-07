@@ -12,6 +12,7 @@ const calculator = (function () {
   }
 
   function divide(b, a) {
+    if (a === 0) return "Error: can't divide by zero";
     return b / a;
   }
 

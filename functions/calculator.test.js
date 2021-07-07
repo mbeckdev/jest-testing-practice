@@ -36,3 +36,7 @@ test('divides 27 by 9, expects 3', () => {
 test('divides 4 by 3', () => {
   expect(calculator.divide(4, 3)).toBeCloseTo(1.333);
 });
+
+test("divides 4 by 0, expects Error: can't divide by zero", () => {
+  expect(calculator.divide(4, 0)).toBe("Error: can't divide by zero");
+});
